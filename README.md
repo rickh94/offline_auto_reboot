@@ -23,7 +23,9 @@ A configuration file should be placed at
 `/etc/offline_auto_reboot/server_config.yml` for the server or
 `/etc/offline_auto_reboot/external_config.yml`.
 
-## Configuration options server `offline_hours: `
+## Configuration options server
+
+`offline_hours: `
 
   The reboot.py will check the `/tmp/online` file at regular intervals to see
 its last accessed time. If it greater than 'offline_hours', it will reboot the
