@@ -19,7 +19,7 @@ try:
 except KeyError:
     hours_difference = 24
 
-print(hours_difference)
+#print(hours_difference)
 
 if os.path.exists("/var/tmp/offline_auto_rebooted"):
     os.remove("/var/tmp/offline_auto_rebooted")
@@ -38,5 +38,5 @@ except FileNotFoundError:
 if needs_reboot:
     subprocess.run(['touch', '/var/tmp/offline_auto_rebooted'])
     subprocess.run(["reboot"])
-else:
-    print("Wouldn't reboot")
+#else:
+#    print("Wouldn't reboot")

@@ -1,0 +1,6 @@
+[Unit]
+Description=Local offline_auto_reboot checker
+
+[Service]
+Type=simple
+ExecStart=/root/offline_auto_reboot/venv/bin/python3 /root/offline_auto_reboot/reboot.py

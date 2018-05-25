@@ -1,0 +1,8 @@
+[Unit]
+Description=Offline auto reboot external checker
+
+[Service]
+User=restartwatcher
+Group=restartwatcher
+Type=simple
+ExecStart=/usr/bin/python3 /home/restartwatcher/external.py
