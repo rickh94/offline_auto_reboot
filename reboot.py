@@ -28,8 +28,8 @@ if os.path.exists("/var/tmp/offline_auto_rebooted"):
 try:
     accessed = datetime.datetime.fromtimestamp(os.stat(file_path).st_atime)
     accessed_ago = datetime.datetime.now() - accessed
-    print(accessed_ago)
-    print(datetime.timedelta(hours=hours_difference))
+#    print(accessed_ago)
+#    print(datetime.timedelta(hours=hours_difference))
     if accessed_ago >= datetime.timedelta(hours=hours_difference):
         needs_reboot = True
 except FileNotFoundError:
